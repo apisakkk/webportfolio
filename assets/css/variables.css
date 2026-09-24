@@ -1,0 +1,94 @@
+/* ==========================================================================
+   CSS VARIABLES & DESIGN TOKENS
+   Theme: Creative Media Portfolio (Blue & Yellow Palette)
+   ========================================================================== */
+
+:root {
+  /* Brand Accent Colors */
+  --blue-primary: #0284c7;        /* Sky 600 */
+  --blue-light: #38bdf8;          /* Sky 400 */
+  --blue-dark: #0369a1;           /* Sky 700 */
+  --blue-glow: rgba(14, 165, 233, 0.4);
+  --blue-glow-subtle: rgba(14, 165, 233, 0.12);
+
+  --yellow-primary: #f59e0b;      /* Amber 500 */
+  --yellow-light: #fbbf24;        /* Amber 400 */
+  --yellow-dark: #d97706;         /* Amber 600 */
+  --yellow-glow: rgba(245, 158, 11, 0.45);
+  --yellow-glow-subtle: rgba(245, 158, 11, 0.12);
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #f59e0b 100%);
+  --grad-blue: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+  --grad-yellow: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  --grad-sunset: linear-gradient(135deg, #0369a1 0%, #0284c7 40%, #f59e0b 100%);
+  --grad-text: linear-gradient(135deg, #38bdf8 0%, #fef08a 60%, #f59e0b 100%);
+
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow-blue: 0 8px 30px rgba(14, 165, 233, 0.3);
+  --shadow-glow-yellow: 0 8px 30px rgba(245, 158, 11, 0.3);
+}
+
+/* ==========================================================================
+   DARK THEME (Default)
+   ========================================================================== */
+[data-bs-theme="dark"], :root:not([data-bs-theme="light"]) {
+  --bg-body: #070c17;
+  --bg-surface: #0c1427;
+  --bg-surface-elevated: #111b33;
+  --bg-navbar: rgba(12, 20, 39, 0.85);
+
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(56, 189, 248, 0.25);
+  --border-yellow: rgba(245, 158, 11, 0.3);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(15, 23, 42, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  
+  --card-hover-bg: rgba(22, 35, 60, 0.85);
+  --input-bg: rgba(15, 23, 42, 0.6);
+}
+
+/* ==========================================================================
+   LIGHT THEME
+   ========================================================================== */
+[data-bs-theme="light"] {
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f5f9;
+  --bg-navbar: rgba(255, 255, 255, 0.88);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+
+  --border-subtle: rgba(14, 165, 233, 0.14);
+  --border-accent: rgba(14, 165, 233, 0.3);
+  --border-yellow: rgba(245, 158, 11, 0.4);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.85);
+  --glass-shadow: 0 8px 32px 0 rgba(2, 132, 199, 0.12);
+
+  --card-hover-bg: #ffffff;
+  --input-bg: #ffffff;
+}

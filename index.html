@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Creative Media Portfolio | หน้าหลัก</title>
+  <meta name="description" content="พอร์ตโฟลิโอส่วนตัวสำหรับนักศึกษาสาขาสื่อนฤมิต (Creative Media) รวบรวมผลงาน Graphic Design, Video Editing, Motion Graphics, UI/UX Design, Web Design และ AI Media">
+  <meta name="keywords" content="Creative Media, Portfolio, UI/UX Design, Motion Graphics, Graphic Design, Web Development">
+  <meta name="author" content="Your Name">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Modular CSS Files in assets/css/ -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       0. PRELOADER LOADING ANIMATION
+       ========================================================================== -->
+  <div id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">Loading Experience...</div>
+  </div>
+
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       Sticky Navigation with Glassmorphism, Theme Switcher & Multi-page Links
+       ========================================================================== -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mainNav">
+    <div class="container">
+      <!-- Logo & Brand Name -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrapper">
+          <i class="fas fa-cubes text-white"></i>
+        </div>
+        <span class="brand-text">Creative<span class="brand-accent">Media</span></span>
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars-staggered"></i>
+      </button>
+
+      <!-- Navigation Menu Items (Linking to separate HTML pages) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="fas fa-user me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html"><i class="fas fa-wand-magic-sparkles me-1"></i> Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html"><i class="fas fa-layer-group me-1"></i> Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-paper-plane me-1"></i> Contact</a>
+          </li>
+        </ul>
+
+        <!-- Theme Switcher & Quick CTA -->
+        <div class="nav-actions ms-lg-3 d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="สลับโหมดแสง/มืด">
+            <i class="fas fa-sun" id="themeIcon"></i>
+          </button>
+          <a href="contact.html" class="btn btn-primary-gradient btn-sm px-3 d-none d-lg-inline-flex">
+            <span>คุยงาน</span>
+            <i class="fas fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================================================
+       2. HERO SECTION (หน้าแรก)
+       Gradient Background with Floating Blobs, Profile Visual, Typing Effect
+       ========================================================================== -->
+  <section class="hero-section">
+    <!-- Dynamic Animated Background Blobs -->
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Geometric Grid Mesh Overlay -->
+    <div class="hero-grid-mesh"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center gy-5">
+        <!-- Left Column: Introduction & Details -->
+        <div class="col-lg-7 text-center text-lg-start reveal reveal-left">
+          <!-- Status Badge -->
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>เปิดรับโอกาสร่วมงานฝึกงาน &amp; ฟรีแลนซ์ 2026</span>
+          </div>
+
+          <!-- Greeting & Name -->
+          <div class="hero-greeting">
+            <i class="fas fa-sparkles me-2"></i>ยินดีต้อนรับสู่พื้นที่สร้างสรรค์ของฉัน
+          </div>
+          <h1 class="hero-name">
+            อภิศักดิ์ <span class="brand-accent">คำตา</span>
+          </h1>
+
+          <!-- Role with Typing Animation -->
+          <div class="hero-role-wrapper">
+            <span class="me-2">I am a</span>
+            <span class="hero-role-text" id="typingRole">Creative Media Student</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Bio Pitch -->
+          <p class="hero-bio">
+            นักศึกษาคณะวิทยาการสารสนเทศ สาขาสื่อดิจิทัลและสื่อนฤมิต (Creative Media) หลงใหลในการผสานศิลปะ เทคโนโลยี และการเล่าเรื่องผ่านงานออกแบบ UI/UX, กราฟิก, วิดีโอ, โมชันกราฟิก และนวัตกรรม AI เพื่อสร้างสรรค์ประสบการณ์ดิจิทัลที่น่าประทับใจ
+          </p>
+
+          <!-- CTA Buttons (Linking to separate HTML pages) -->
+          <div class="hero-actions">
+            <a href="portfolio.html" class="btn btn-primary-gradient">
+              <i class="fas fa-eye"></i>
+              <span>ดูผลงาน (Portfolio)</span>
+            </a>
+            <a href="contact.html" class="btn btn-secondary-glass">
+              <i class="fas fa-paper-plane"></i>
+              <span>ติดต่อ (Contact)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Visual Placeholder -->
+        <div class="col-lg-5 reveal reveal-right delay-2">
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <!-- Floating Badge 1: Top Left -->
+              <div class="floating-badge floating-badge-1">
+                <div class="badge-icon blue">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <div>
+                  <div class="badge-title">Visual Creator</div>
+                  <div class="badge-subtitle">Creative &amp; Motion</div>
+                </div>
+              </div>
+
+              <!-- Profile Avatar Frame with Animated Glowing Border -->
+              <div class="profile-avatar-frame">
+                <img 
+                  src="assets/images/profile-placeholder.svg" 
+                  alt="ภานุวัฒน์ นฤมิตศิลป์ - Creative Media Student" 
+                  class="profile-avatar-img"
+                />
+              </div>
+
+              <!-- Floating Badge 2: Bottom Right -->
+              <div class="floating-badge floating-badge-2">
+                <div class="badge-icon yellow">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div>
+                  <div class="badge-title">UI/UX &amp; Web</div>
+                  <div class="badge-subtitle">Front-end Ready</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       QUICK OVERVIEW & FEATURED DISCOVERY
+       นำทางไปยังเนื้อหาในแต่ละหน้าอย่างรวดเร็ว
+       ========================================================================== -->
+  <section class="py-5" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container py-4">
+      <div class="section-header reveal mb-5">
+        <div class="section-tag">
+          <i class="fas fa-compass"></i>
+          <span>Explore My World</span>
+        </div>
+        <h2 class="section-title">
+          สำรวจเนื้อหา <span class="text-gradient">ในแต่ละหมวดหมู่</span>
+        </h2>
+        <p class="section-subtitle">
+          คลิกเลือกดูรายละเอียดในแต่ละส่วนเพื่อทำความรู้จักตัวตน ทักษะ ผลงาน และการติดต่อ
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: About Me -->
+        <div class="col-md-6 col-lg-3 reveal delay-1">
+          <div class="about-glass-card h-100 d-flex flex-column text-center p-4">
+            <div class="skill-icon-box blue mx-auto mb-3">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <h3 class="h5 fw-bold text-white mb-2">เกี่ยวกับฉัน</h3>
+            <p class="text-muted small flex-grow-1">
+              ประวัติความเป็นมา การศึกษา ความสนใจ และเป้าหมายในการทำงานในสายสื่อนฤมิต
+            </p>
+            <a href="about.html" class="portfolio-btn mt-3">
+              <span>อ่านประวัติ</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Skills -->
+        <div class="col-md-6 col-lg-3 reveal delay-2">
+          <div class="about-glass-card h-100 d-flex flex-column text-center p-4">
+            <div class="skill-icon-box yellow mx-auto mb-3">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="h5 fw-bold text-white mb-2">ทักษะความเชี่ยวชาญ</h3>
+            <p class="text-muted small flex-grow-1">
+              ทักษะ 10 ด้าน ทั้ง Graphic, Video, Motion, UI/UX, Web Design และ AI Tools
+            </p>
+            <a href="skills.html" class="portfolio-btn mt-3">
+              <span>ดูทักษะทั้งหมด</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Portfolio -->
+        <div class="col-md-6 col-lg-3 reveal delay-3">
+          <div class="about-glass-card h-100 d-flex flex-column text-center p-4">
+            <div class="skill-icon-box blue mx-auto mb-3">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3 class="h5 fw-bold text-white mb-2">ผลงานสร้างสรรค์</h3>
+            <p class="text-muted small flex-grow-1">
+              ผลงานคัดสรร 6 ชิ้นงาน พร้อมภาพประกอบและหน้าต่างแสดงรายละเอียดเชิงลึก
+            </p>
+            <a href="portfolio.html" class="portfolio-btn mt-3">
+              <span>ชมแกลเลอรีผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Contact -->
+        <div class="col-md-6 col-lg-3 reveal delay-4">
+          <div class="about-glass-card h-100 d-flex flex-column text-center p-4">
+            <div class="skill-icon-box yellow mx-auto mb-3">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <h3 class="h5 fw-bold text-white mb-2">ติดต่อพูดคุย</h3>
+            <p class="text-muted small flex-grow-1">
+              ช่องทางโซเชียลมีเดียครบ 5 แพลตฟอร์ม และแบบฟอร์มส่งข้อความติดต่อโดยตรง
+            </p>
+            <a href="contact.html" class="portfolio-btn mt-3">
+              <span>ส่งข้อความ</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       FOOTER SECTION & FLOATING SCROLL TO TOP
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <i class="fas fa-cubes text-primary"></i>
+          <span>Apisak Creative Media Portfolio</span>
+        </div>
+        <p class="footer-copyright">
+          &copy; 2026 My Portfolio
+        </p>
+        <p class="footer-designer">
+          Designed by <span>Apisak</span> &bull; Creative Media Student
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="เลื่อนขึ้นด้านบนสุด" title="เลื่อนขึ้นด้านบน">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <!-- ==========================================================================
+       SCRIPTS
+       ========================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

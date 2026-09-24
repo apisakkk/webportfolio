@@ -1,0 +1,249 @@
+/* ==========================================================================
+   ABOUT ME SECTION STYLES
+   Bio, Education Timeline, Interests Tags, Career Goals Vision Card
+   ========================================================================== */
+
+.about-section {
+  position: relative;
+  padding: 100px 0;
+  background: var(--bg-body);
+}
+
+/* Glass Card Container */
+.about-glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  height: 100%;
+}
+
+.about-glass-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: 0 15px 35px var(--blue-glow-subtle);
+  transform: translateY(-4px);
+}
+
+/* Bio Text */
+.about-bio-lead {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.about-bio-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Key Stats Grid */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.stat-item:hover {
+  border-color: var(--yellow-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--yellow-glow-subtle);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Education Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--blue-primary), var(--yellow-primary));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--blue-primary);
+  border: 3px solid var(--bg-body);
+  box-shadow: 0 0 10px var(--blue-glow);
+  transition: all var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--yellow-primary);
+  box-shadow: 0 0 14px var(--yellow-glow);
+  transform: scale(1.25);
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--yellow-primary);
+  background: var(--yellow-glow-subtle);
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-subtitle {
+  font-size: 0.9rem;
+  color: var(--blue-light);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Interests Tags */
+.interests-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+}
+
+.interest-tag i {
+  color: var(--yellow-primary);
+  transition: transform var(--transition-fast);
+}
+
+.interest-tag:hover {
+  background: var(--blue-glow-subtle);
+  border-color: var(--blue-light);
+  color: var(--blue-light);
+  transform: translateY(-2px);
+}
+
+.interest-tag:hover i {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Career Goal Vision Card */
+.career-goal-card {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.15) 0%, rgba(245, 158, 11, 0.15) 100%);
+  border: 1px solid var(--border-accent);
+  border-radius: 24px;
+  padding: 1.75rem;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-goal-card::before {
+  content: '"';
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  font-size: 6rem;
+  font-family: serif;
+  color: var(--blue-light);
+  opacity: 0.15;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.career-goal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--yellow-primary);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.career-goal-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .about-glass-card {
+    padding: 1.5rem;
+  }
+  
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

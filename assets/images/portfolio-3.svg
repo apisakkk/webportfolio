@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a" />
+      <stop offset="50%" stop-color="#140f2d" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <radialGradient id="sphereGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#090d16" />
+    </radialGradient>
+    <filter id="mGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#mBg)"/>
+
+  <!-- Isometric 3D Grid Stage -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.25">
+    <path d="M 0 450 L 400 300 L 800 450" />
+    <path d="M 50 470 L 400 320 L 750 470" />
+    <path d="M 100 490 L 400 340 L 700 490" />
+    <path d="M 200 375 L 400 300 L 600 375" />
+    <line x1="400" y1="300" x2="400" y2="500" />
+    <line x1="250" y1="355" x2="250" y2="500" />
+    <line x1="550" y1="355" x2="550" y2="500" />
+  </g>
+
+  <!-- Orbital Rings / Motion Paths -->
+  <ellipse cx="400" cy="220" rx="260" ry="85" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="14 10" transform="rotate(-15 400 220)" filter="url(#mGlow)"/>
+  <ellipse cx="400" cy="220" rx="220" ry="70" fill="none" stroke="#38bdf8" stroke-width="2.5" transform="rotate(35 400 220)"/>
+  <ellipse cx="400" cy="220" rx="160" ry="160" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+
+  <!-- Main 3D Sphere -->
+  <circle cx="400" cy="220" r="110" fill="url(#sphereGrad)" filter="url(#mGlow)"/>
+
+  <!-- Satellite Energy Particles -->
+  <circle cx="210" cy="180" r="16" fill="#f59e0b" filter="url(#mGlow)"/>
+  <circle cx="580" cy="280" r="14" fill="#38bdf8" filter="url(#mGlow)"/>
+  <circle cx="340" cy="80" r="8" fill="#ffffff"/>
+  <circle cx="460" cy="340" r="10" fill="#fef08a"/>
+  
+  <!-- Waveform / Kinetic typography accent -->
+  <path d="M 120 280 Q 200 200, 280 280 T 440 280 T 600 280" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="6" text-anchor="middle" opacity="0.9">CYBERPULSE</text>
+  <text x="400" y="405" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="4" text-anchor="middle">CINEMA 4D &bull; AFTER EFFECTS</text>
+
+  <!-- Category Tag -->
+  <g transform="translate(50, 430)">
+    <rect width="190" height="36" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" opacity="0.95"/>
+    <text x="95" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#f59e0b" text-anchor="middle">MOTION GRAPHIC</text>
+  </g>
+</svg>

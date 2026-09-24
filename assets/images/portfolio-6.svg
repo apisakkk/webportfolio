@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#17122b" />
+      <stop offset="100%" stop-color="#082f49" />
+    </linearGradient>
+    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="aiGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#aiBg)"/>
+
+  <!-- Neural Network Constellation Nodes -->
+  <g opacity="0.4" stroke="#38bdf8" stroke-width="1.5">
+    <line x1="120" y1="180" x2="250" y2="120"/>
+    <line x1="250" y1="120" x2="380" y2="200"/>
+    <line x1="120" y1="180" x2="200" y2="340"/>
+    <line x1="200" y1="340" x2="380" y2="200"/>
+    <line x1="380" y1="200" x2="520" y2="110"/>
+    <line x1="380" y1="200" x2="580" y2="320"/>
+    <line x1="520" y1="110" x2="680" y2="170"/>
+    <line x1="580" y1="320" x2="680" y2="170"/>
+    <line x1="200" y1="340" x2="580" y2="320"/>
+  </g>
+
+  <!-- Glowing Nodes -->
+  <circle cx="120" cy="180" r="7" fill="#f59e0b" filter="url(#aiGlow)"/>
+  <circle cx="250" cy="120" r="9" fill="#38bdf8" filter="url(#aiGlow)"/>
+  <circle cx="200" cy="340" r="8" fill="#38bdf8" filter="url(#aiGlow)"/>
+  <circle cx="380" cy="200" r="14" fill="#f59e0b" filter="url(#aiGlow)"/>
+  <circle cx="520" cy="110" r="8" fill="#38bdf8" filter="url(#aiGlow)"/>
+  <circle cx="580" cy="320" r="10" fill="#f59e0b" filter="url(#aiGlow)"/>
+  <circle cx="680" cy="170" r="9" fill="#38bdf8" filter="url(#aiGlow)"/>
+
+  <!-- Center AI Holographic Cylinder / Prism Art -->
+  <g transform="translate(300, 90)">
+    <!-- Hexagonal Ring Matrix -->
+    <polygon points="100,20 180,65 180,155 100,200 20,155 20,65" fill="none" stroke="url(#neonLine)" stroke-width="4" filter="url(#aiGlow)"/>
+    <polygon points="100,45 155,75 155,145 100,175 45,145 45,75" fill="#0f172a" opacity="0.75" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- AI Brain / Spark Icon Center -->
+    <path d="M85 85 Q100 65 115 85 Q135 100 120 120 Q115 140 100 135 Q85 140 80 120 Q65 100 85 85 Z" fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <circle cx="100" cy="105" r="8" fill="#ffffff" filter="url(#aiGlow)"/>
+    
+    <!-- Soundwave / Waveform bars -->
+    <rect x="55" y="190" width="6" height="30" rx="3" fill="#38bdf8"/>
+    <rect x="70" y="175" width="6" height="45" rx="3" fill="#38bdf8"/>
+    <rect x="85" y="160" width="6" height="60" rx="3" fill="#f59e0b"/>
+    <rect x="100" y="150" width="6" height="70" rx="3" fill="#ffffff"/>
+    <rect x="115" y="160" width="6" height="60" rx="3" fill="#f59e0b"/>
+    <rect x="130" y="175" width="6" height="45" rx="3" fill="#38bdf8"/>
+    <rect x="145" y="190" width="6" height="30" rx="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Prompt Bar Visual -->
+  <g transform="translate(180, 370)">
+    <rect width="440" height="46" rx="23" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="30" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">/imagine prompt: neon cybernetic sphere, cinematic lighting --v 6.0</text>
+    <rect x="360" y="7" width="70" height="32" rx="16" fill="#f59e0b"/>
+    <text x="395" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">GENERATE</text>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(50, 430)">
+    <rect width="170" height="36" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" opacity="0.95"/>
+    <text x="85" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#f59e0b" text-anchor="middle">AI TOOLS &amp; ART</text>
+  </g>
+</svg>

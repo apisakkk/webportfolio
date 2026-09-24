@@ -1,0 +1,272 @@
+<!-- ==========================================================================
+     SECTION 5: PORTFOLIO (ผลงานสร้างสรรค์)
+     Responsive Grid with 6 Creative Projects, Filtering Tabs, and Detail Modal
+     ========================================================================== -->
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header reveal">
+      <div class="section-tag">
+        <i class="fas fa-layer-group"></i>
+        <span>Featured Projects</span>
+      </div>
+      <h2 class="section-title">
+        ผลงาน <span class="text-gradient">ที่คัดสรร</span>
+      </h2>
+      <p class="section-subtitle">
+        ตัวอย่างผลงานการออกแบบและสร้างสรรค์สื่อดิจิทัลที่ผ่านการคิด วิจัย และลงมือผลิตด้วยความประณีต
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filter-wrapper reveal">
+      <button type="button" class="filter-btn active" data-filter="all">
+        <i class="fas fa-shapes me-1"></i> ทั้งหมด (6)
+      </button>
+      <button type="button" class="filter-btn" data-filter="graphic">
+        <i class="fas fa-bezier-curve me-1"></i> Graphic
+      </button>
+      <button type="button" class="filter-btn" data-filter="video">
+        <i class="fas fa-film me-1"></i> Video &amp; Motion
+      </button>
+      <button type="button" class="filter-btn" data-filter="web">
+        <i class="fas fa-laptop-code me-1"></i> UI/UX &amp; Web
+      </button>
+      <button type="button" class="filter-btn" data-filter="ai">
+        <i class="fas fa-brain me-1"></i> AI Media
+      </button>
+    </div>
+
+    <!-- Portfolio Grid (6 Projects) -->
+    <div class="portfolio-grid">
+      <!-- Project 1: Lumina Brand Identity (Graphic Design) -->
+      <div class="portfolio-item reveal delay-1" data-category="graphic">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">Graphic Design</span>
+            <img src="assets/images/portfolio-1.svg" alt="Lumina Brand Identity" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">Lumina Brand Identity</h3>
+            <p class="portfolio-desc">
+              ระบบอัตลักษณ์แบรนด์และ Visual Guidelines สำหรับสตูดิโอยุคใหม่ โดดเด่นด้วยโทนสีฟ้า-เหลืองอันทรงพลัง
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="1">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Urban Echoes Short Film (Video Editing) -->
+      <div class="portfolio-item reveal delay-2" data-category="video">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">Video Editing</span>
+            <img src="assets/images/portfolio-2.svg" alt="Urban Echoes Short Film" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">Urban Echoes Short Film</h3>
+            <p class="portfolio-desc">
+              ภาพยนตร์สั้นเชิงสารคดีที่ถ่ายทอดจังหวะชีวิตของเมืองใหญ่ผ่านภาพ 4K DCI, การเกรดสี และการออกแบบเสียง Foley
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="2">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: CyberPulse Motion Reel (Motion Graphic) -->
+      <div class="portfolio-item reveal delay-3" data-category="video">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">Motion Graphic</span>
+            <img src="assets/images/portfolio-3.svg" alt="CyberPulse Motion Reel" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-cube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">CyberPulse 3D Motion Reel</h3>
+            <p class="portfolio-desc">
+              ภาพเคลื่อนไหว 3 มิติประกอบดนตรีแนว Cyberpunk ผสานอนุภาคแสงและเทคนิคเรขาคณิตสามมิติใน Cinema 4D
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="3">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Artisan UI/UX Mobile App (UI/UX Design) -->
+      <div class="portfolio-item reveal delay-4" data-category="web">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">UI/UX Design</span>
+            <img src="assets/images/portfolio-4.svg" alt="Artisan UI/UX Mobile App" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-mobile-screen"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">Artisan Coffee App UI/UX</h3>
+            <p class="portfolio-desc">
+              การออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้งานสำหรับแอปกาแฟพรีเมียม ตั้งแต่วิจัยผู้ใช้จนถึงตัวอย่าง Interactive
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="4">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Solaris Interactive Web (Web Design) -->
+      <div class="portfolio-item reveal delay-5" data-category="web">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">Web Design</span>
+            <img src="assets/images/portfolio-5.svg" alt="Solaris Interactive Web" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">Solaris Interactive Web</h3>
+            <p class="portfolio-desc">
+              เว็บไซต์แลนดิ้งเพจสไตล์ Glassmorphism พัฒนาด้วย HTML5, CSS3, JavaScript และ Bootstrap 5 ตอบสนองทุกหน้าจอ
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="5">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Synthesia AI Visual Art (AI Tools) -->
+      <div class="portfolio-item reveal delay-6" data-category="ai">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb">
+            <span class="portfolio-category-badge">AI Tools</span>
+            <img src="assets/images/portfolio-6.svg" alt="Synthesia AI Visual Art" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-btn-circle">
+                <i class="fas fa-wand-magic-sparkles"></i>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3 class="portfolio-title">Synthesia AI Visual Art</h3>
+            <p class="portfolio-desc">
+              การสำรวจจินตนาการโลกอนาคตด้วยเทคโนโลยี Generative AI, ControlNet และ Prompt Crafting สไตล์ไซเบอร์สเปซ
+            </p>
+            <button 
+              type="button" 
+              class="portfolio-btn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#projectModal" 
+              data-project-id="6">
+              <span>ดูผลงาน</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     PORTFOLIO DETAILS MODAL POPUP
+     ========================================================================== -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content custom-glass-modal">
+      <div class="modal-header">
+        <div>
+          <span class="badge bg-primary text-white mb-2 px-3 py-1" id="modalProjectCategory">Graphic Design</span>
+          <h3 class="modal-title" id="modalProjectTitle">Project Title</h3>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrapper">
+          <img src="" id="modalProjectImg" alt="Project Preview" class="img-fluid">
+        </div>
+
+        <div class="modal-meta-grid">
+          <div>
+            <div class="meta-label">ปีที่สร้างสรรค์</div>
+            <div class="meta-value" id="modalProjectYear">2026</div>
+          </div>
+          <div>
+            <div class="meta-label">เครื่องมือที่ใช้</div>
+            <div class="meta-value" id="modalProjectTools">Adobe Suite</div>
+          </div>
+          <div>
+            <div class="meta-label">ผู้ว่าจ้าง / กิจกรรม</div>
+            <div class="meta-value" id="modalProjectClient">Client Name</div>
+          </div>
+        </div>
+
+        <h4 class="h5 fw-bold text-white mb-2">รายละเอียดผลงาน</h4>
+        <p class="text-muted mb-3" id="modalProjectDesc">Description text goes here...</p>
+
+        <h4 class="h6 fw-bold text-warning mb-2">จุดเด่นสำคัญของผลงาน (Key Highlights)</h4>
+        <ul class="list-unstyled text-muted" id="modalProjectFeatures">
+          <!-- Populated by JavaScript -->
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary-glass" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+        <a href="#contact" class="btn btn-primary-gradient" data-bs-dismiss="modal">สอบถามผลงานนี้</a>
+      </div>
+    </div>
+  </div>
+</div>

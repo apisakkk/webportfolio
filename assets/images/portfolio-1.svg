@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#111c3a" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  
+  <!-- Grid Lines -->
+  <g opacity="0.12" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- Accent Blobs -->
+  <circle cx="680" cy="120" r="140" fill="#f59e0b" opacity="0.15" filter="blur(40px)"/>
+  <circle cx="150" cy="380" r="160" fill="#0284c7" opacity="0.25" filter="blur(50px)"/>
+
+  <!-- Brand Stationery Mockup Card 1 -->
+  <g transform="translate(180, 100) rotate(-6)" filter="url(#shadow1)">
+    <rect width="240" height="300" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="120" cy="100" r="45" fill="none" stroke="url(#glow1)" stroke-width="6"/>
+    <polygon points="120,70 145,115 95,115" fill="#f59e0b"/>
+    <rect x="60" y="170" width="120" height="10" rx="5" fill="#ffffff" opacity="0.8"/>
+    <rect x="75" y="195" width="90" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="85" y="212" width="70" height="6" rx="3" fill="#64748b"/>
+    <!-- Color Swatches -->
+    <circle cx="85" cy="250" r="12" fill="#0284c7"/>
+    <circle cx="120" cy="250" r="12" fill="#38bdf8"/>
+    <circle cx="155" cy="250" r="12" fill="#f59e0b"/>
+  </g>
+
+  <!-- Brand Card 2 (Front) -->
+  <g transform="translate(360, 130) rotate(8)" filter="url(#shadow1)">
+    <rect width="280" height="260" rx="20" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="280" height="15" fill="#0284c7" rx="4"/>
+    <g transform="translate(40, 50)">
+      <!-- Modern Logo mark -->
+      <path d="M0 40 L30 0 L60 40 Z" fill="#0284c7"/>
+      <circle cx="65" cy="20" r="14" fill="#f59e0b"/>
+      <text x="90" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="900" fill="#0f172a">LUMINA</text>
+      <text x="90" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#64748b" letter-spacing="3">CREATIVE STUDIO</text>
+    </g>
+    <!-- Business Card Lines -->
+    <rect x="40" y="140" width="200" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="40" y="160" width="150" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="40" y="180" width="110" height="8" rx="4" fill="#e2e8f0"/>
+    
+    <g transform="translate(190, 185)">
+      <circle cx="20" cy="20" r="18" fill="#fef3c7"/>
+      <text x="20" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#d97706" text-anchor="middle">CM</text>
+    </g>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(50, 430)">
+    <rect width="190" height="36" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" opacity="0.95"/>
+    <text x="95" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#f59e0b" text-anchor="middle">BRAND IDENTITY</text>
+  </g>
+</svg>

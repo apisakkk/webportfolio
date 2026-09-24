@@ -1,0 +1,170 @@
+/* ==========================================================================
+   SKILLS SECTION STYLES
+   Interactive Cards, Glowing Icons, Progress Indicators, Hover 3D Lift
+   ========================================================================== */
+
+.skills-section {
+  position: relative;
+  padding: 100px 0;
+  background: var(--bg-body);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Skill Card */
+.skill-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 22px;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  cursor: default;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+/* Skill Hover Effects */
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-accent);
+  box-shadow: 0 15px 30px var(--blue-glow);
+  background: var(--card-hover-bg);
+}
+
+.skill-card:hover::before {
+  opacity: 1;
+}
+
+/* Specific Accent Variations for Blue and Yellow */
+.skill-card.accent-yellow:hover {
+  border-color: var(--yellow-primary);
+  box-shadow: 0 15px 30px var(--yellow-glow);
+}
+
+.skill-card.accent-yellow::before {
+  background: var(--grad-yellow);
+}
+
+/* Icon Container */
+.skill-icon-box {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.85rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.skill-card:hover .skill-icon-box {
+  transform: scale(1.12) rotate(6deg);
+}
+
+/* Icon Color Styles */
+.skill-icon-box.blue {
+  background: var(--blue-glow-subtle);
+  color: var(--blue-light);
+  border: 1px solid var(--border-accent);
+}
+
+.skill-icon-box.yellow {
+  background: var(--yellow-glow-subtle);
+  color: var(--yellow-primary);
+  border: 1px solid var(--border-yellow);
+}
+
+.skill-card:hover .skill-icon-box.blue {
+  box-shadow: 0 0 25px var(--blue-glow);
+}
+
+.skill-card:hover .skill-icon-box.yellow {
+  box-shadow: 0 0 25px var(--yellow-glow);
+}
+
+/* Skill Title */
+.skill-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.2px;
+}
+
+.skill-category {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+}
+
+/* Skill Progress Bar */
+.skill-progress-wrapper {
+  width: 100%;
+  margin-top: auto;
+}
+
+.skill-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.skill-progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background: var(--bg-surface-elevated);
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--grad-primary);
+  width: 0%;
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-card.accent-yellow .skill-progress-fill {
+  background: var(--grad-yellow);
+}

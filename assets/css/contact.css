@@ -1,0 +1,209 @@
+/* ==========================================================================
+   CONTACT SECTION STYLES
+   Contact Channels, Social Media Cards, Interactive Form, Glowing Inputs
+   ========================================================================== */
+
+.contact-section {
+  position: relative;
+  padding: 100px 0;
+  background: var(--bg-body);
+}
+
+/* Contact Info Card */
+.contact-info-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  height: 100%;
+}
+
+.contact-lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Social & Contact Channels List */
+.contact-channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-channel-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all var(--transition-normal);
+}
+
+.contact-channel-item:hover {
+  transform: translateX(8px);
+  border-color: var(--border-accent);
+  background: var(--card-hover-bg);
+  box-shadow: 0 8px 25px var(--blue-glow-subtle);
+}
+
+.channel-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: transform var(--transition-normal);
+  flex-shrink: 0;
+}
+
+/* Platform specific icon colors */
+.channel-icon-box.email {
+  background: var(--blue-glow-subtle);
+  color: var(--blue-light);
+}
+
+.channel-icon-box.facebook {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.channel-icon-box.instagram {
+  background: rgba(236, 72, 153, 0.15);
+  color: #ec4899;
+}
+
+.channel-icon-box.github {
+  background: rgba(148, 163, 184, 0.15);
+  color: #f1f5f9;
+}
+
+[data-bs-theme="light"] .channel-icon-box.github {
+  color: #0f172a;
+}
+
+.channel-icon-box.behance {
+  background: var(--yellow-glow-subtle);
+  color: var(--yellow-primary);
+}
+
+.contact-channel-item:hover .channel-icon-box {
+  transform: scale(1.15) rotate(8deg);
+}
+
+.channel-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.channel-handle {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.channel-arrow {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.contact-channel-item:hover .channel-arrow {
+  transform: translateX(4px);
+  color: var(--blue-light);
+}
+
+/* Contact Message Form Card */
+.contact-form-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  height: 100%;
+}
+
+.form-group-custom {
+  margin-bottom: 1.5rem;
+}
+
+.form-label-custom {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control-custom {
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 0.85rem 1.15rem;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: all var(--transition-normal);
+}
+
+.form-control-custom:focus {
+  outline: none;
+  border-color: var(--blue-light);
+  box-shadow: 0 0 0 4px var(--blue-glow);
+  background: var(--bg-surface);
+}
+
+.form-control-custom::placeholder {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.contact-submit-btn {
+  width: 100%;
+  background: var(--grad-primary);
+  border: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px var(--blue-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--yellow-glow);
+}
+
+@media (max-width: 575.98px) {
+  .contact-info-card, .contact-form-card {
+    padding: 1.5rem;
+  }
+}

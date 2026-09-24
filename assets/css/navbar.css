@@ -1,0 +1,172 @@
+/* ==========================================================================
+   NAVIGATION BAR STYLES
+   Sticky Navigation, Glassmorphism, Theme Toggle, Smooth Active Link
+   ========================================================================== */
+
+.main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  padding: 1.25rem 0;
+  transition: all var(--transition-normal);
+  background: transparent;
+}
+
+/* Scrolled state: Glassmorphism effect */
+.main-navbar.scrolled {
+  padding: 0.75rem 0;
+  background: var(--bg-navbar);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--text-main) !important;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.brand-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grad-primary);
+  box-shadow: 0 4px 15px var(--blue-glow);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.navbar-brand:hover .brand-icon-wrapper {
+  transform: rotate(8deg) scale(1.05);
+  box-shadow: 0 6px 20px var(--yellow-glow);
+}
+
+.brand-text {
+  font-family: var(--font-heading);
+}
+
+.brand-accent {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nav Links */
+.navbar-nav {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-item .nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  padding: 0.5rem 1rem !important;
+  border-radius: 50px;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.nav-item .nav-link:hover {
+  color: var(--blue-light);
+  transform: translateY(-1px);
+}
+
+/* Active Nav State */
+.nav-item .nav-link.active {
+  color: var(--text-main);
+  background: var(--blue-glow-subtle);
+}
+
+.nav-item .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--grad-yellow);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  color: var(--yellow-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: 1.1rem;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--yellow-primary);
+  box-shadow: 0 0 16px var(--yellow-glow);
+  color: var(--yellow-light);
+}
+
+/* Mobile Navbar Toggler */
+.custom-toggler {
+  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  transition: all var(--transition-fast);
+}
+
+.custom-toggler:focus {
+  box-shadow: 0 0 0 3px var(--blue-glow);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .navbar-nav {
+    align-items: flex-start;
+  }
+  
+  .nav-item .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .nav-actions {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
